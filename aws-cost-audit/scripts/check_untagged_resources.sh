@@ -25,8 +25,8 @@ check_tags() {
     log_warn "  Untagged $type: $resource_id"
   else
     log_success "  Tagged $type: $resource_id"
-    echo "    Tags:"
-    echo "$tags" | jq -r '.[] | "      - \(.Key): \(.Value)"'
+   # echo "    Tags:"
+   # echo "$tags" | jq -r '.[] | "      - \(.Key): \(.Value)"'
   fi
 }
 
